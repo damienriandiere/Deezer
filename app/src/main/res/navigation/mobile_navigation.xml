@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.deezer.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_favori"
+        android:name="com.example.deezer.ui.favori.FavoriFragment"
+        android:label="@string/title_favoris"
+        tools:layout="@layout/fragment_favori" />
+
+    <fragment
+        android:id="@+id/navigation_compose"
+        android:name="com.example.deezer.ui.compose.ComposeFragment"
+        android:label="@string/title_compose"
+        tools:layout="@layout/fragment_compose" />
+
+    <fragment
+        android:id="@+id/navigation_album"
+        android:name="com.example.deezer.ui.album.AlbumFragment"
+        android:label="Albums"
+        tools:layout="@layout/fragment_albums" />
+
+    <fragment
+        android:id="@+id/navigation_track"
+        android:name="com.example.deezer.ui.tracks.TrackFragment"
+        android:label="Tracks"
+        tools:layout="@layout/fragment_tracks" />
+</navigation>
